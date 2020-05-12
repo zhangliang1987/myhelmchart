@@ -69,7 +69,7 @@ questions:
     type: string
     label: Grafana Image Name
   - variable: grafana.image.tag
-    default: "4.6.5"
+    default: "v4.6.5"
     description: "Grafana image tag"
     type: string
     label: Grafana Image Tag
