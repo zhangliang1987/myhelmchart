@@ -12,7 +12,7 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: server.image.repository
-    default: "prom/prometheus"
+    default: "loongson.harbor.cn/zhang/loongnix/rancher/prom/prometheus"
     description: "Prometheus image name"
     type: string
     label: Prometheus Image Name
@@ -22,7 +22,7 @@ questions:
     type: string
     label: Prometheus Image Tag
   - variable: alertmanager.image.repository
-    default: "prom/alertmanager"
+    default: "loongson.harbor.cn/zhang/loongnix/rancher/prom/alertmanager"
     description: "Alertmanager image name"
     type: string
     label: Alertmanager Image Name
@@ -34,7 +34,7 @@ questions:
     label: Alertmanager Image Tag
     show_if: "alertmanager.enabled=true"
   - variable: nodeExporter.image.repository
-    default: "prom/node-exporter"
+    default: "loongson.harbor.cn/zhang/loongnix/rancher/node-exporter"
     description: "Node exporter image name"
     type: string
     label: NodeExporter Image Name
@@ -54,7 +54,7 @@ questions:
     type: string
     label: Pushgateway Image Tag
   - variable: kubeStateMetrics.image.repository
-    default: "prom/kube-state-metrics"
+    default: "loongson.harbor.cn/zhang/loongnix/rancher/kube-state-metrics"
     description: "Kube-state-metrics image name"
     type: string
     label: KubeStateMetrics Image Name
@@ -64,7 +64,7 @@ questions:
     type: string
     label: KubeStateMetrics Image Tag
   - variable: grafana.image.repository #暂时不处理
-    default: "loongnixk8s/grafana-mips64le"
+    default: "loongson.harbor.cn/zhang/loongnix/rancher/grafana"
     description: "Grafana image name"
     type: string
     label: Grafana Image Name
@@ -74,7 +74,7 @@ questions:
     type: string
     label: Grafana Image Tag
   - variable: grafana.grafanaWatcher.image.repository #暂时不处理
-    default: "loongnix/grafana-watcher"
+    default: "loongson.harbor.cn/zhang/loongnix/rancher/grafana-watcher"
     description: "Grafana Watcher image name"
     type: string
     label: Grafana Watcher Image Name
