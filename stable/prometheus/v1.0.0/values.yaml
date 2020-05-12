@@ -196,7 +196,7 @@ configmapReload:
   ## configmap-reload container image
   ##
   image:
-    repository: jimmidyson/configmap-reload
+    repository: loongson.harbor.cn/zhang/loongnix/rancher/jimmidyson/configmap-reload
     tag: v0.1
     pullPolicy: IfNotPresent
 
