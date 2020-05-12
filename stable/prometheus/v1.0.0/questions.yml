@@ -64,22 +64,22 @@ questions:
     type: string
     label: KubeStateMetrics Image Tag
   - variable: grafana.image.repository #暂时不处理
-    default: "grafana/grafana"
+    default: "loongnixk8s/grafana-mips64le"
     description: "Grafana image name"
     type: string
     label: Grafana Image Name
   - variable: grafana.image.tag
-    default: "5.0.0"
+    default: "4.6.5"
     description: "Grafana image tag"
     type: string
     label: Grafana Image Tag
   - variable: grafana.grafanaWatcher.image.repository #暂时不处理
-    default: "quay.io/coreos/grafana-watcher"
+    default: "loongnix/grafana-watcher"
     description: "Grafana Watcher image name"
     type: string
     label: Grafana Watcher Image Name
   - variable: grafana.grafanaWatcher.image.tag
-    default: "v0.0.8"
+    default: "v0.19.0"
     description: "Grafana Watcher image tag"
     type: string
     label: Grafana Watcher Image Tag
