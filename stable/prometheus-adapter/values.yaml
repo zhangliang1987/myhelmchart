@@ -1,6 +1,6 @@
 # Default values for k8s-prometheus-adapter..
 image:
-  repository: directxman12/k8s-prometheus-adapter-mips64le
+  repository: loongson.harbor.cn/rancher/k8s-prometheus-adapter-mips64le
   tag: latest
   pullPolicy: IfNotPresent
 

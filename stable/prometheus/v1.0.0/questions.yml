@@ -22,7 +22,7 @@ questions:
     type: string
     label: Prometheus Image Tag
   - variable: alertmanager.image.repository
-    default: "loongson.harbor.cn/zhang/loongnix/rancher/prom/alertmanager"
+    default: "loongson.harbor.cn/rancher/alertmanager"
     description: "Alertmanager image name"
     type: string
     label: Alertmanager Image Name

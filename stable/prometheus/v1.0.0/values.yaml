@@ -32,8 +32,8 @@ alertmanager:
   ## alertmanager container image
   ##
   image:
-    repository: prom/alertmanager
-    tag: v0.14.0
+    repository: loongson.harbor.cn/rancher/alertmanager
+    tag: v0.20.0
     pullPolicy: IfNotPresent
 
   ## Additional alertmanager container arguments
