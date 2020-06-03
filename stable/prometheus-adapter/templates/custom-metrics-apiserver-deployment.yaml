@@ -39,7 +39,6 @@ spec:
         - --logtostderr=true
         - --prometheus-url={{ .Values.prometheus.url }}
         - --metrics-relist-interval={{ .Values.metricsRelistInterval }}
-        - --rate-interval={{ .Values.rateInterval }}
         - --v={{ .Values.logLevel }}
         - --config=/etc/adapter/config.yaml
         ports:
