@@ -12,12 +12,12 @@ questions:
   group: "Container Images"
   subquestions:
   - variable: server.image.repository
-    default: "loongson.harbor.cn/zhang/loongnix/rancher/prom/prometheus"
+    default: "loongson.harbor.cn/rancher/prom-prometheus"
     description: "Prometheus image name"
     type: string
     label: Prometheus Image Name
   - variable: server.image.tag
-    default: "v2.11.2"
+    default: "v2.11.1"
     description: "Prometheus image tag"
     type: string
     label: Prometheus Image Tag
@@ -34,12 +34,12 @@ questions:
     label: Alertmanager Image Tag
     show_if: "alertmanager.enabled=true"
   - variable: nodeExporter.image.repository
-    default: "loongson.harbor.cn/zhang/loongnix/rancher/node-exporter"
+    default: "loongson.harbor.cn/rancher/prom-node-exporter"
     description: "Node exporter image name"
     type: string
     label: NodeExporter Image Name
   - variable: nodeExporter.image.tag
-    default: "v0.18.1"
+    default: "v0.17.0"
     description: "Node exporter image tag"
     type: string
     label: NodeExporter Image Tag
@@ -54,7 +54,7 @@ questions:
     type: string
     label: Pushgateway Image Tag
   - variable: kubeStateMetrics.image.repository
-    default: "loongson.harbor.cn/zhang/loongnix/rancher/kube-state-metrics"
+    default: "loongson.harbor.cn/rancher/coreos-kube-state-metrics"
     description: "Kube-state-metrics image name"
     type: string
     label: KubeStateMetrics Image Name
@@ -64,22 +64,22 @@ questions:
     type: string
     label: KubeStateMetrics Image Tag
   - variable: grafana.image.repository #暂时不处理
-    default: "loongson.harbor.cn/zhang/loongnix/rancher/grafana"
+    default: "loongson.harbor.cn/rancher/grafana-grafana"
     description: "Grafana image name"
     type: string
     label: Grafana Image Name
   - variable: grafana.image.tag
-    default: "v4.6.5"
+    default: "6.3.6"
     description: "Grafana image tag"
     type: string
     label: Grafana Image Tag
   - variable: grafana.grafanaWatcher.image.repository #暂时不处理
-    default: "loongson.harbor.cn/zhang/loongnix/rancher/grafana-watcher"
+    default: "loongson.harbor.cn/rancher/grafana-watcher"
     description: "Grafana Watcher image name"
     type: string
     label: Grafana Watcher Image Name
   - variable: grafana.grafanaWatcher.image.tag
-    default: "v0.19.0"
+    default: "v0.32.0"
     description: "Grafana Watcher image tag"
     type: string
     label: Grafana Watcher Image Tag
