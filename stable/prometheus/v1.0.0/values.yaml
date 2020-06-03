@@ -196,8 +196,8 @@ configmapReload:
   ## configmap-reload container image
   ##
   image:
-    repository: loongson.harbor.cn/zhang/loongnix/rancher/jimmidyson/configmap-reload
-    tag: v0.1
+    repository: loongson.harbor.cn/rancher/coreos-configmap-reload
+    tag: v0.0.1
     pullPolicy: IfNotPresent
 
   ## Additional configmap-reload container arguments
@@ -231,7 +231,7 @@ initChownData:
   ## initChownData container image
   ##
   image:
-    repository: busybox
+    repository: loongson.harbor.cn/loongnix/busybox
     tag: latest
     pullPolicy: IfNotPresent
 
@@ -252,8 +252,8 @@ kubeStateMetrics:
   ## kube-state-metrics container image
   ##
   image:
-    repository: quay.io/coreos/kube-state-metrics
-    tag: v1.3.1
+    repository: loongson.harbor.cn/rancher/coreos-kube-state-metrics
+    tag: v1.8.0
     pullPolicy: IfNotPresent
 
   ## kube-state-metrics container arguments
@@ -323,8 +323,8 @@ nodeExporter:
   ## node-exporter container image
   ##
   image:
-    repository: prom/node-exporter
-    tag: v0.15.2
+    repository: loongson.harbor.cn/rancher/prom-node-exporter
+    tag: v0.17.0
     pullPolicy: IfNotPresent
 
   ## Custom Update Strategy
@@ -410,8 +410,8 @@ server:
   ## Prometheus server container image
   ##
   image:
-    repository: prom/prometheus
-    tag: v2.2.1
+    repository: loongson.harbor.cn/rancher/prom-prometheus
+    tag: v2.11.1
     pullPolicy: IfNotPresent
 
   ## The URL prefix at which the container can be accessed. Useful in the case the '-web.external-url' includes a slug
@@ -981,12 +981,12 @@ grafana:
   adminPassword: "admin"
 
   image:
-    repository: grafana/grafana
-    tag: 5.0.0
+    repository: loongson.harbor.cn/rancher/grafana-grafana
+    tag: 6.3.6
 
   grafanaWatcher:
-    repository: quay.io/coreos/grafana-watcher
-    tag: v0.0.8
+    repository: loongson.harbor.cn/rancher/grafana-watcher
+    tag: v0.32.0
 
   auth:
     anonymous:
