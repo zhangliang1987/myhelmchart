@@ -1,6 +1,6 @@
 labels:
   io.cattle.role: cluster # options are cluster/project
-  io.rancher.app_min_version: 7.3.0
+  io.rancher.app_min_version: 7.6.2
 categories:
 - elasticsearch
 questions:
@@ -32,23 +32,6 @@ questions:
     description: "Kibana image tag"
     type: string
     label: Kibana Image Tag
-  - variable: fluentd-elasticsearch.image
-    default: "loongson.harbor.cn/loongnix/fluentd"
-    description: "fluentd image name"
-    type: string
-    label: Fluentd Image Name
-  - variable: fluentd-elasticsearch.imageTag
-    default: "1.9.3"
-    description: "fluentd image tag"
-    type: string
-    label: Fluentd Image Tag
-#fluentd config
-- variable: fluentd.image.repository
-  default: "loongson.harbor.cn/loongnix/fluentd"
-  type: enum
-  label: Config Fluentd
-  required: true
-  group: "Fluentd Config"
 # kibana configs
 - variable: kibana.language
   default: "zh-CN"
