@@ -72,7 +72,7 @@ questions:
   label: Config ElasticSearch Replicas
   required: true
   group: "Elasticsearch Config"
-  min: 3
+  min: 1
   max: 99
 - variable: elasticsearch.antiAffinity
   default: "hard"
