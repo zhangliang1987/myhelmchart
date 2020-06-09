@@ -1,9 +1,9 @@
 image:
-  repository: quay.io/fluentd_elasticsearch/fluentd
+  repository: loongson.harbor.cn/loongnix/fluentd
 ## Specify an imagePullPolicy (Required)
 ## It's recommended to change this to 'Always' if the image tag is 'latest'
 ## ref: http://kubernetes.io/docs/user-guide/images/#updating-images
-  tag: v3.0.1
+  tag: 1.9.3
   pullPolicy: IfNotPresent
   ## Optionally specify an array of imagePullSecrets.
   ## Secrets must be manually created in the namespace.
@@ -63,7 +63,7 @@ elasticsearch:
   includeTagKey: true
   setOutputHostEnvVar: true
   # If setOutputHostEnvVar is false this value is ignored
-  hosts: ["192.168.1.150:30920"]
+  hosts: ["10.140.3.241:30920"]
   indexName: "fluentd"
   logstash:
     enabled: true

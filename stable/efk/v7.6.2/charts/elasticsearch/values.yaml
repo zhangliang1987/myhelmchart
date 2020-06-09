@@ -50,8 +50,8 @@ secretMounts: []
 #    path: /usr/share/elasticsearch/config/certs
 #    defaultMode: 0755
 
-image: "docker.elastic.co/elasticsearch/elasticsearch"
-imageTag: "7.7.1"
+image: "loongson.harbor.cn/loongnix/elasticsearch"
+imageTag: "7.6.2"
 imagePullPolicy: "IfNotPresent"
 
 podAnnotations: {}
@@ -90,7 +90,7 @@ networkHost: "0.0.0.0"
 
 volumeClaimTemplate:
   accessModes: [ "ReadWriteOnce" ]
-  storageClassName: "efk-nfs-client"
+  storageClass: "cephrbd2"
   resources:
     requests:
       storage: 30Gi
