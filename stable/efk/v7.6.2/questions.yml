@@ -42,6 +42,13 @@ questions:
     description: "fluentd image tag"
     type: string
     label: Fluentd Image Tag
+#fluentd config
+- variable: fluentd.image.repository
+  default: "loongson.harbor.cn/loongnix/fluentd"
+  type: enum
+  label: Config Fluentd
+  required: true
+  group: "Fluentd Config"
 # kibana configs
 - variable: kibana.language
   default: "zh-CN"
