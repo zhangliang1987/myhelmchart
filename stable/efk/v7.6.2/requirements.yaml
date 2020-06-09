@@ -1,0 +1,12 @@
+dependencies:
+  - name: elasticsearch
+    version: 7.3.0
+    condition: elasticsearch.enabled
+  - name: kibana
+    version: 7.3.0
+    condition: kibana.enabled
+    repository: file://./charts/kibana
+  - name: fluentd-elasticsearch
+    version: v3.0.1
+    condition: fluentd-elasticsearch.enabled
+    repository: file://./charts/fluentd-elasticsearch

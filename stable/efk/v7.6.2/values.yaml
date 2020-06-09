@@ -1,0 +1,19 @@
+# Default values for efk.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+elasticsearch:
+  enabled: true
+  image: "ranchercharts/elasticsearch-elasticsearch"
+  imageTag: "7.3.0"
+  enableProxy: true
+
+
+kibana:
+  enabled: true
+  image: "ranchercharts/kibana-kibana"
+  imageTag: "7.3.0"
+
+fluentd-elasticsearch:
+  enabled: true
+  image: "ranchercharts/beats-filebeat"
+  imageTag: "7.3.0"
