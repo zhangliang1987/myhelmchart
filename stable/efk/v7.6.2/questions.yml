@@ -32,6 +32,16 @@ questions:
     description: "Kibana image tag"
     type: string
     label: Kibana Image Tag
+  - variable: Fluentd.image
+    default: "loongson.harbor.cn/loongnix/fluentd"
+    description: "Fluentd image name"
+    type: string
+    label: Fluentd Image Name
+  - variable: Fluentd.imageTag
+    default: "1.9.3"
+    description: "Fluentd image tag"
+    type: string
+    label: Fluentd Image Tag
 # kibana configs
 - variable: kibana.language
   default: "zh-CN"

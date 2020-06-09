@@ -7,8 +7,12 @@ elasticsearch:
   imageTag: "7.6.2"
   enableProxy: false
 
-
 kibana:
   enabled: true
   image: "loongson.harbor.cn/loongnix/kibana"
   imageTag: "7.6.2"
+
+fluentd-elasticsearch:
+  enabled: true
+  image: "loongson.harbor.cn/loongnix/fluentd"
+  imageTag: "1.9.3"
