@@ -13,32 +13,32 @@ questions:
   show_subquestion_if: false
   subquestions:
   - variable: elasticsearch.image
-    default: "docker.elastic.co/elasticsearch/elasticsearch"
+    default: "loongson.harbor.cn/loongnix/elasticsearch"
     description: "Elasticsearch image name"
     type: string
     label: ElasticSearch Image Name
   - variable: elasticsearch.imageTag
-    default: "7.7.1"
+    default: "7.6.2"
     description: "Elasticsearch image tag"
     type: string
     label: Elasticsearch Image Tag
   - variable: kibana.image
-    default: "docker.elastic.co/kibana/kibana"
+    default: "loongson.harbor.cn/loongnix/kibana"
     description: "Kibana image name"
     type: string
     label: Kibana Image Name
   - variable: kibana.imageTag
-    default: "7.7.1"
+    default: "7.6.2"
     description: "Kibana image tag"
     type: string
     label: Kibana Image Tag
-  - variable: fluentd.image
-    default: "quay.io/fluentd_elasticsearch/fluentd"
+  - variable: fluentd-elasticsearch.image
+    default: "loongson.harbor.cn/loongnix/fluentd"
     description: "fluentd image name"
     type: string
     label: Fluentd Image Name
-  - variable: fluentd.imageTag
-    default: "v3.0.1"
+  - variable: fluentd-elasticsearch.imageTag
+    default: "1.9.3"
     description: "fluentd image tag"
     type: string
     label: Fluentd Image Tag
