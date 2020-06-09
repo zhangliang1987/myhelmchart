@@ -1,9 +1,9 @@
 dependencies:
   - name: elasticsearch
-    version: 7.3.0
+    version: 7.7.1
     condition: elasticsearch.enabled
   - name: kibana
-    version: 7.3.0
+    version: 7.7.1
     condition: kibana.enabled
     repository: file://./charts/kibana
   - name: fluentd-elasticsearch
