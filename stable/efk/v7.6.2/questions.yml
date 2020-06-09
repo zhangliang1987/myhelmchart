@@ -18,7 +18,7 @@ questions:
     type: string
     label: ElasticSearch Image Name
   - variable: elasticsearch.imageTag
-    default: "7.7.1"
+    default: "7.3.0"
     description: "Elasticsearch image tag"
     type: string
     label: Elasticsearch Image Tag
@@ -28,7 +28,7 @@ questions:
     type: string
     label: Kibana Image Name
   - variable: kibana.imageTag
-    default: "7.7.1"
+    default: "7.3.0"
     description: "Kibana image tag"
     type: string
     label: Kibana Image Tag
@@ -36,10 +36,10 @@ questions:
     default: "ranchercharts/fluentd"
     description: "fluentd image name"
     type: string
-    label: fluentd Image Name
+    label: Fluentd Image Name
   - variable: fluentd.imageTag
-    default: "v3.0.1"
-    description: "Fluentd image tag"
+    default: "7.3.0"
+    description: "fluentd image tag"
     type: string
     label: Fluentd Image Tag
 # kibana configs
