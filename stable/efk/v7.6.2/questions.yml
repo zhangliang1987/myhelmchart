@@ -64,12 +64,6 @@ questions:
   options:
   - "ClusterIP"
   - "NodePort"
-- variable: kibana.enableProxy
-  default: true
-  description: "Expose kibana using nginx proxy"
-  type: boolean
-  label: Expose Kibana using Nginx Proxy
-  group: "Kibana Config"
 # elasticSearch configs
 - variable: elasticsearch.replicas
   default: 3
