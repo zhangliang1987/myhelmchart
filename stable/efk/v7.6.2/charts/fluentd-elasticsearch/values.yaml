@@ -63,7 +63,7 @@ elasticsearch:
   includeTagKey: true
   setOutputHostEnvVar: true
   # If setOutputHostEnvVar is false this value is ignored
-  hosts: ["10.140.3.241:30920"]
+  hosts: ["elasticsearch-master.default.svc.cluster.local:9200"]
   indexName: "fluentd"
   logstash:
     enabled: true

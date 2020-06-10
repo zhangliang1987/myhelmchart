@@ -1,5 +1,5 @@
 ---
-elasticsearchHosts: "http://10.140.3.241:30920"
+elasticsearchHosts: "http://elasticsearch-master.default.svc.cluster.local:9200"
 
 replicas: 1
 

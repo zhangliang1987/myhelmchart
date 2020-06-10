@@ -167,8 +167,8 @@ transportPort: 9300
 service:
   labels: {}
   labelsHeadless: {}
-  type: NodePort
-  nodePort: "30920"
+  type: ClusterIP
+  nodePort: ""
   annotations: {}
   httpPortName: http
   transportPortName: transport
