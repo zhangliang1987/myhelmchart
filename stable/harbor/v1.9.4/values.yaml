@@ -268,7 +268,7 @@ proxy:
 # If expose the service via "ingress", the Nginx will not be used
 nginx:
   image:
-    repository: goharbor/nginx-photon
+    repository: loogson.harbor.cn/goharbor/nginx-photon
     tag: dev
   replicas: 1
   # resources:
@@ -283,7 +283,7 @@ nginx:
 
 portal:
   image:
-    repository: goharbor/harbor-portal
+    repository: loogson.harbor.cn/goharbor/harbor-portal
     tag: dev
   replicas: 1
 # resources:
@@ -298,7 +298,7 @@ portal:
 
 core:
   image:
-    repository: goharbor/harbor-core
+    repository: loogson.harbor.cn/goharbor/harbor-core
     tag: dev
   replicas: 1
   ## Liveness probe values
@@ -329,7 +329,7 @@ core:
 
 jobservice:
   image:
-    repository: goharbor/harbor-jobservice
+    repository: loogson.harbor.cn/goharbor/harbor-jobservice
     tag: dev
   replicas: 1
   maxJobWorkers: 10
@@ -352,7 +352,7 @@ jobservice:
 registry:
   registry:
     image:
-      repository: goharbor/registry-photon
+      repository: loogson.harbor.cn/goharbor/registry-photon
       tag: v2.7.1-patch-2819-2553-dev
 
     # resources:
@@ -361,7 +361,7 @@ registry:
     #    cpu: 100m
   controller:
     image:
-      repository: goharbor/harbor-registryctl
+      repository: loogson.harbor.cn/goharbor/harbor-registryctl
       tag: dev
 
     # resources:
@@ -399,7 +399,7 @@ chartmuseum:
   # Harbor defaults ChartMuseum to returning relative urls, if you want using absolute url you should enable it by change the following value to 'true'
   absoluteUrl: false
   image:
-    repository: goharbor/chartmuseum-photon
+    repository: loogson.harbor.cn/goharbor/chartmuseum-photon
     tag: v0.9.0-v1.9.4
   replicas: 1
   # resources:
@@ -415,7 +415,7 @@ chartmuseum:
 clair:
   enabled: false
   image:
-    repository: goharbor/clair-photon
+    repository: loogson.harbor.cn/goharbor/clair-photon
     tag: v2.1.0-v1.9.4
   replicas: 1
   # The interval of clair updaters, the unit is hour, set to 0 to
@@ -435,7 +435,7 @@ notary:
   enabled: false
   server:
     image:
-      repository: goharbor/notary-server-photon
+      repository: loogson.harbor.cn/goharbor/notary-server-photon
       tag: v0.6.1-v1.9.4
     replicas: 1
     # resources:
@@ -444,7 +444,7 @@ notary:
     #    cpu: 100m
   signer:
     image:
-      repository: goharbor/notary-signer-photon
+      repository: loogson.harbor.cn/goharbor/notary-signer-photon
       tag: v0.6.1-v1.9.4
     replicas: 1
     # resources:
@@ -470,7 +470,7 @@ database:
   type: internal
   internal:
     image:
-      repository: goharbor/harbor-db
+      repository: loogson.harbor.cn/goharbor/harbor-db
       tag: dev
     # the image used by the init container
     initContainerImage:
@@ -518,7 +518,7 @@ redis:
   type: internal
   internal:
     image:
-      repository: goharbor/redis-photon
+      repository: loogson.harbor.cn/goharbor/redis-photon
       tag: dev
     # resources:
     #  requests:
