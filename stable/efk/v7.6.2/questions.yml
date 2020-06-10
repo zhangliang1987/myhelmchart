@@ -43,17 +43,6 @@ questions:
     type: string
     label: Fluentd Image Tag
 # kibana configs
-- variable: kibana.language
-  default: "zh-CN"
-  description: "Config Kiabana Language"
-  type: enum
-  label: Config Kiabana Language
-  required: true
-  group: "Kibana Config"
-  options:
-  - "en"
-  - "zh-CN"
-  - "ja-JP"
 - variable: kibana.service.type
   default: "NodePort"
   description: "Kibana service type"
